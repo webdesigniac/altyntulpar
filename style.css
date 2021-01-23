@@ -1,0 +1,101 @@
+
+*{background: blueblack;
+justify-content:center;
+align-items:center;
+}
+
+body {
+	  display: -ms-flex;
+	  display: -o-flex;
+	  display: -ie-flex;
+	  display: flex;
+	  min-zoom: 75%;
+	  max-zoom: 100%;
+}
+
+/*@viewport {
+  zoom: 1.00;
+  min-zoom: 1.0;
+  max-zoom: 1.0;
+}*/
+
+@-ms-viewport{
+width: 480px;
+}
+
+p.ex1 { min-width: 30%; max-width: 80%;}
+
+@viewport {	zoom: 1.00;
+              min-zoom: 10%;
+              max-zoom: 30%; }
+
+header, footer{/*display:flex; - this messed everything not letting playlist */
+		padding: 10px;
+		height: 20%;
+		width:	100%;
+		background: black;
+		color: #c89932ff;
+		filter: blur(0.2px);
+		text-shadow: 0.5px 0.5px 1px yellow;
+		float: left;
+		}
+center{
+    position: absolute;
+		height:100%;
+		width: 100%;
+		float: center;
+    background-color: black;
+		background-image: url("../img/Tulpar.png");
+		background-repeat: no-repeat;
+		/*background-size: auto;*/
+		/*background-size: contain;*/
+		background-size: cover;
+		
+		background-position: center;
+		flex-flow: column;
+		filter: blur(0.5px);
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+		position: absolute;
+		}
+/*
+center div #leftdiv {
+		margin-left: 5px;
+		padding: 5px;
+		float: left;
+		border-radius: 5px;
+		display: flex;
+		}
+
+
+center div #rightdiv {
+		margin-right: 5px;
+		padding: 5px;
+		float: right;
+		border-radius: 2px;
+		display: flex;
+		}
+*/
+#leftdiv {
+    background-color: #c89932ff;
+		margin: 10%;
+		padding: 0.5%;
+		float: left;
+		border-radius: 5px;
+		display: flex;
+		opacity: 80%;
+		}
+
+#rightdiv {
+    background-color: yellow;
+		margin: 10%;
+		padding: 0.5%;
+		float: right;
+		border-radius: 2px;
+		display: flex;
+		opacity: 80%;
+		}
+#rightdiv h4{
+color: yellow;}
